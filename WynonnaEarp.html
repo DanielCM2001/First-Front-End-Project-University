@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Ajustar Body -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Vai buscar Icons -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Search btn & txtbox -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+
+  <style>
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #0c0c0d;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+
+  <title>Cinematic Book</title>
+</head>
+
+<body id="bodyBackgroundColor">
+  <header>
+    <div class="HeadPanel">
+      <div id="myNav" class="overlay"">
+        <a href=" javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Movies</a>
+          <a href="#">TV Shows</a>
+          <a href="#">Animes</a>
+          <a href="#">Community</a>
+        </div>
+      </div>
+
+      <span id="MenuBtn" onclick="openNav()">&#9776;</span>
+
+      <a href="MainPage.html" id="ahref"><label id="Title">Cinematic Book</label></a>
+
+      <div class="input-group" id="input-group_search">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">All <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Animes</a></li>
+          </ul>
+        </div>
+        <input type="text" class="form-control" id="Searchtxtbox" aria-label="..." placeholder="Search...">
+      </div>
+
+      <button class="dropbtn" id="bellbtn"><i class='fa fa-bell'></i></button>
+      <button class="dropbtn" id="Messagebtn"><i class='fa fa-envelope'></i></button>
+
+      <div class="dropdown">
+        <button class="dropbtn">SilvRayleigh | <i class='fas fa-user-circle fa_ProfileCircle'></i></button>
+        <div class="dropdown-content">
+          <a href="Profile.html">Profile</a>
+          <a href="#">Friends</a>
+          <a href="#">Blog Posts</a>
+          <a href="#">Reviews</a>
+          <a href="#">Account Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="MediaHeaderBackground">
+    <div class="MediaHeaderShadow">
+      <div class="MediaHeaderInfoDiv">
+        <label id="MediaHeader_Title">Wynonna Earp</label><br>
+        <label id="MediaHeader_Title-Info">2016 | +16 | 3 Seasons | Action & Fantasy TV
+          Show</label>
+        <br>
+        <label id="MediaHeader_Title-info-synopsis">The outcast descendant of lawman Wyatt Earp
+          teams up with an immortal Doc Holliday to rid the world of demonic revenants from the Wild West.</label>
+        <label id="MediaHeader_Title-info-starring">Starring: Melanie Scrofano,Shamier
+          Anderson,Tim Rozon</label><br>
+        <label id="MediaHeader_Title-info-Creators">Created by: Emily Andras</label>
+        <br><br><br>
+        <button class="btn btn btn-primary" id="MediaHeader_Btns">Add to My List <i class="fa fa-plus"
+            aria-hidden="true"></i></button>
+        <button class="btn btn btn-primary" id="MediaHeader_Btns">Add to Favorites <i class="fa fa-star"
+            aria-hidden="true"></i></button>
+        <button class="btn btn btn-primary" id="MediaHeader_Btns">Write a Review <i class="fas fa-pencil-alt"
+            aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="MainMediaInformationDiv">
+    <div class="MainMediaInformation_LeftDiv">
+      <img src="TvShows/Wynonna Earp/Capa.jpg" id="LeftDiv_MediaCover">
+      <label class="LeftDiv_QuestLab">Type:</label>
+      <label class="LeftDiv_AwnsLab">TV Show</label>
+      <br>
+      <label class="LeftDiv_QuestLab">Status:</label>
+      <label id="LeftDiv_Media-Status-Lbl">In progress</label>
+      <br>
+      <label class="LeftDiv_QuestLab">Genres:</label>
+      <label class="LeftDiv_AwnsLab">Action | Fantasy | Mystery | Western</label>
+      <br>
+      <label class="LeftDiv_QuestLab">Original language(s):</label>
+      <label class="LeftDiv_AwnsLab">English</label>
+      <br>
+      <label class="LeftDiv_QuestLab">No. of seasons:</label>
+      <label class="LeftDiv_AwnsLab">3</label>
+      <br>
+      <label class="LeftDiv_QuestLab">No. of episodes:</label>
+      <label class="LeftDiv_AwnsLab">37</label>
+      <br>
+      <label class="LeftDiv_QuestLab">IMDb:</label>
+      <label class="LeftDiv_AwnsLab">7,4/10 <i class="fa fa-star fa_custom"></i></label>
+      <label class="LeftDiv_QuestLab">Popularity:</label>
+      <label class="LeftDiv_AwnsLab">674</label>
+      <label class="Popularity">(-20) <i class="fa fa-line-chart" class="Popularity"></i></label>
+    </div>
+
+    <div class="MainMediaInformation_MiddleDiv">
+
+      <label id="Storyline">Storyline</label><br>
+      <label class="Storyline_Text">Wynonna Earp is
+        a supernatural Western horror television series. Developed by Emily Andras, the Canadian-American production is
+        based on the comic book series by Beau Smith. Melanie Scrofano plays the series' titular character, the
+        great-great-granddaughter of legendary lawman Wyatt Earp. In the series, Earp returns to her hometown of
+        Purgatory, near the Canadian Rockies, where she battles revenants, the reincarnated outlaws that the elder Wyatt
+        killed.</label><br>
+      <label class="Storyline_Text">Upon her 27th
+        birthday, Wynonna inherited the special power to return revenants to Hell with her ancestor's 12-inch barrel
+        special "Peacemaker" revolver. She is recruited by the Black Badge Division (BBD), a secret government agency
+        led by Special Agent Xavier Dolls which eventually includes an ageless Doc Holliday and Wynonna's sister,
+        Waverly Earp. Nicole Haught, Waverly's girlfriend and a Purgatory Sheriff's Deputy, assists the team in her
+        local police role.</label><br>
+
+      <hr class="MainMediaInformation_MiddleDiv_hr" style="transform:translateY(-10px);">
+
+      <label id="PhotosLbl">Photos</label><br>
+      <div id="PhotosContainerDiv">
+        <a href=""><img class="PhotosSize"
+            src="https://m.media-amazon.com/images/M/MV5BYTc5YjI2YjUtOWEyMi00YzAzLWJlZWMtMWY1YmE0Mzc1NjFhXkEyXkFqcGdeQXVyOTMzMDQxNg@@._V1_UY99_CR25,0,99,99_AL_.jpg"></a>
+        <a href=""><img class="PhotosSize"
+            src="https://m.media-amazon.com/images/M/MV5BZmEzNzIyNjktNzNlNi00OTY5LWIzYjktZDVkY2NmMDYwNjBmXkEyXkFqcGdeQXVyNzc1MDc3MDU@._V1_UY99_CR24,0,99,99_AL_.jpg"></a>
+        <a href=""><img class="PhotosSize"
+            src="https://m.media-amazon.com/images/M/MV5BZDMyYjU4OGEtMWJiZi00MGE2LTk5YjktNmMwMDQ0ZTExNDAxXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_UY99_CR16,0,99,99_AL_.jpg"></a>
+        <a href=""><img class="PhotosSize"
+            src="https://m.media-amazon.com/images/M/MV5BMTAzNDQ3NzA3MzZeQTJeQWpwZ15BbWU4MDUwNTc1OTUz._V1_UX99_CR0,0,99,99_AL_.jpg"></a>
+        <a href=""><img class="PhotosSize"
+            src="https://m.media-amazon.com/images/M/MV5BMTkzMDA1NjI1MV5BMl5BanBnXkFtZTgwMjE1NzU5NTM@._V1_UX99_CR0,0,99,99_AL_.jpg"></a>
+        <a href=""><img class="PhotosSize"
+            src="https://m.media-amazon.com/images/M/MV5BNDUwYTNkNjktNjEwOC00NjI5LWEzMDUtOTE2MjdmODZhNmQzXkEyXkFqcGdeQXVyNTEwMTc3NDE@._V1_UY99_CR38,0,99,99_AL_.jpg"></a>
+        <a href=""><img class="PhotosSize"
+            src="https://m.media-amazon.com/images/M/MV5BYTQ3YTlkMDktMTIxZi00ODA4LWJlYWQtMDA1NGI3ODE4NDM2XkEyXkFqcGdeQXVyOTMzMDQxNg@@._V1_UY99_CR25,0,99,99_AL_.jpg"></a>
+        <a href=""><img class="PhotosSize"
+            src="https://m.media-amazon.com/images/M/MV5BM2YxMzg3NzgtYzAwZi00MmY3LTljMWYtODdjNjc5NGY3YjA0XkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_UY99_CR16,0,99,99_AL_.jpg"></a>
+        <a href=""><img class="PhotosSize"
+            src="https://m.media-amazon.com/images/M/MV5BNjcxNjE5MDg3MF5BMl5BanBnXkFtZTgwMDI1NzU5NTM@._V1_UX99_CR0,0,99,99_AL_.jpg"></a>
+      </div>
+
+      <a href=""> <label class="LinkLabel" id="SeeAllPhotos">See all 401 photos »</label><br></a>
+
+      <hr class="MainMediaInformation_MiddleDiv_hr" style="transform:translateY(-30px);">
+
+      <label id="CastLbl">Cast</label><br>
+      <label id="CastSummaryLbl">Series cast summary:</label>
+
+      <table class="cast_list">
+        <tbody>
+          <tr class="odd">
+            <td class="primary_photo"><a href=""><img class="CastProfilePics" alt="Melanie Scrofano"
+                  src="https://m.media-amazon.com/images/M/MV5BZTMwNDE2NDItNTZhMC00NGZiLThhNTUtYTk0MzdmZjFlMjc5XkEyXkFqcGdeQXVyMTM4Mjc1OTU@._V1_UX32_CR0,0,32,44_AL_.jpg"></a>
+            </td>
+            <td><a href="">Melanie Scrofano</a></td>
+            <td><a href="">Wynonna Earp</a></td>
+            <td><a href="">37 episodes, 2016-2018</a></td>
+          </tr>
+          <tr class="odd">
+            <td class="primary_photo"><a href=""><img class="CastProfilePics" alt="Melanie Scrofano"
+                  src="https://m.media-amazon.com/images/M/MV5BMTgyZWQ1MWEtYjlkNi00OGY4LTk1ZDYtMGZkMmEyM2U4OWIwXkEyXkFqcGdeQXVyMTcwNzMxNDY@._V1_UX32_CR0,0,32,44_AL_.jpg"></a>
+            </td>
+            <td><a href="">Tim Rozon</a></td>
+            <td><a href="">Doc Holliday / ...</a></td>
+            <td><a href="">37 episodes, 2016-2018</a></td>
+          </tr>
+          <tr class="odd">
+            <td class="primary_photo"><a href=""><img class="CastProfilePics" alt="Melanie Scrofano"
+                  src="https://m.media-amazon.com/images/M/MV5BMjM5NjY2ODU4NV5BMl5BanBnXkFtZTgwNDg0NzU5NTM@._V1_UX32_CR0,0,32,44_AL_.jpg"></a>
+            </td>
+            <td><a href="">Dominique Provost-Chalkley</a></td>
+            <td><a href="">Waverly Earp</a></td>
+            <td><a href="">37 episodes, 2016-2018</a></td>
+          </tr>
+          <tr class="odd">
+            <td class="primary_photo"><a href=""><img class="CastProfilePics" alt="Melanie Scrofano"
+                  src="https://m.media-amazon.com/images/M/MV5BMmU3MWI5NjAtYmZhYy00NmFlLWI4NGMtMjZjM2ZkNDJjZDU4XkEyXkFqcGdeQXVyMzc5NDc5OTA@._V1_UX32_CR0,0,32,44_AL_.jpg"></a>
+            </td>
+            <td><a href="">Katherine Barrell</a></td>
+            <td><a href="">Nicole Haught</a></td>
+            <td><a href="">33 episodes, 2016-2018</a></td>
+          </tr>
+          <tr class="odd">
+            <td class="primary_photo"><a href=""><img class="CastProfilePics" alt="Melanie Scrofano"
+                  src="https://m.media-amazon.com/images/M/MV5BYjFhNmViODMtNWNjYS00ZGRiLThjYzMtZGZlOGE0ZjIyYmI1XkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_UX32_CR0,0,32,44_AL_.jpg"></a>
+            </td>
+            <td><a href="">Shamier Anderson</a></td>
+            <td><a href="">Agent Dolls / ...</a></td>
+            <td><a href="">27 episodes, 2016-2018</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <a href=""> <label class="LinkLabel" id="SeeFullCast">See full cast »</label><br></a>
+    </div>
+
+    <div class="MainMediaInformation_RightDiv">
+      <label id="TopRatedEpsLbl">Top-Rated
+        Episodes</i></label><br>
+
+      <img id="RightDiv_Img" src="TvShows/Wynonna Earp/TopRatedEpisode_1.jpg">
+      <label class="RightDiv_SeasonLbl" style="margin-top: 5px;">S1.E13</label><br>
+      <label class="RightDiv_TitleLbl" style="transform:translateY(-5px)">I Walk the Line</label><br>
+      <label class="RightDiv_ReviewLbl" style="transform:translateY(-5px);">Wynonna faces down her most terrifying
+        nemesis yet at a horrific personal cost. Waverly learns a shocking truth about her own past, and Dolls makes an
+        impossible choice.</label><br>
+
+      <label class="RightDiv_IMDbRate" style="transform:translateY(-5px);">9,2 <i
+          class="fa fa-star fa_custom"></i></label>
+      <label class="RightDiv_RateThis" style="transform:translateY(-5px);">Rate
+        This <i class="fa fa-star fa_RateThisStar"></i></label>
+
+      <hr class="RightDiv_hr" style="transform:translateY(-15px);">
+
+      <label class="RightDiv_SeasonLbl" style="transform:translateY(-25px);">S1.E9</label><br>
+      <label class="RightDiv_TitleLbl" style="transform:translateY(-30px);">Bury Me with My Guns On</label><br>
+      <label class="RightDiv_ReviewLbl" style="transform:translateY(-30px);">Still shaken by her encounter with the last
+        of the Seven, Wynonna turns to drink-and other lustful activities-for solace. Soon she's swept up in Henry's
+        vendetta to find and defeat the woman who ...</label><br>
+
+      <label class="RightDiv_IMDbRate" style="transform:translateY(-30px);">9,0 <i
+          class="fa fa-star fa_custom"></i></label>
+      <label class="RightDiv_RateThis" style="transform:translateY(-30px);">Rate
+        This <i class="fa fa-star fa_RateThisStar"></i></label>
+
+      <hr class="RightDiv_hr" style="transform:translateY(-40px);">
+
+      <label class="RightDiv_SeasonLbl" style="transform:translateY(-45px);">S1.E12</label><br>
+      <label class="RightDiv_TitleLbl" style="transform:translateY(-50px);">House of Memories</label><br>
+      <label class="RightDiv_ReviewLbl" style="transform:translateY(-50px);">An admirer with a gruesome vendetta has
+        someone familiar in a tight spot, while Wynonna races to outwit Bobo Del Rey-and protect Dolls from a new
+        foe.</label><br>
+
+      <label class="RightDiv_IMDbRate" style="transform:translateY(-50px);">9,0 <i
+          class="fa fa-star fa_custom"></i></label>
+      <label class="RightDiv_RateThis" style="transform:translateY(-50px);">Rate
+        This <i class="fa fa-star fa_RateThisStar"></i></label>
+
+      <hr class="RightDiv_hr" style="transform:translateY(-60px);"><br>
+
+      <a href=""> <label id="SeeMoreEpsLbl">See more episodes »</label></a>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="UserRevDiv">
+    <div class="col-sm-3">
+      <div class="USR_Header_DIV">
+        <label class="labels">User Review:</label>
+        <label class="labels">10 <i class="fa fa-star fa_custom"></i></label>
+      </div>
+      <div class="USR_Title_DIV">
+        <label class="labels">Mildly surprised...</label><br>
+      </div>
+      <div class="USR_Name_Date_DIV">
+        <label class="Name">brianro</label>
+        <label class="Date">9 April 2016</label>
+      </div>
+      <div class="USR_Text_DIV">
+        <label class="labels">I was kinda nervous about watching this show after I saw the ratings. But I was mildly
+          surprised. While the pilot had a few flaws, the acting was spot-on and the dialogues were pretty good. If you
+          like shows with action,bad-ass women,the supernatural element & a western twist,I'd recommend giving this show
+          a try. You'll either love it or hate it. Also, Melanie Scrofano is great as a bad-ass gun-slinging demon
+          killer.</label>
+      </div>
+      <div class="USR_Footer_DIV">
+        <label class="labels">Report This</label>
+        <label class="Separator-Lbl"> | </label>
+        <label class="labels">Permalink</label>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="USR_Header_DIV">
+        <label class="labels">User Review:</label>
+        <label class="labels">9,0 <i class="fa fa-star fa_custom"></i></label>
+      </div>
+      <div class="USR_Title_DIV">
+        <label class="labels">Gets better with time....</label><br>
+      </div>
+      <div class="USR_Name_Date_DIV">
+        <label class="Name">kitsune-25141</label>
+        <label class="Date">24 May 2016</label>
+      </div>
+      <div class="USR_Text_DIV">
+        <label class="labels">I am really starting to like this series more and more as the actors start to get
+          comfortable with their roles. The more I watch, the more I want to watch. I am enjoying watching the
+          characters become more fleshed out. Sure there are some cheesy bits here and there, but as the series matures
+          this gets better.</label>
+      </div>
+      <div class="USR_Footer_DIV">
+        <label class="labels">Report This</label>
+        <label class="Separator-Lbl"> | </label>
+        <label class="labels">Permalink</label>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="USR_Header_DIV">
+        <label class="labels">User Review:</label>
+        <label class="labels">9,0 <i class="fa fa-star fa_custom"></i></label>
+      </div>
+      <div class="USR_Title_DIV">
+        <label class="labels">Fun, entertaining show</label><br>
+      </div>
+      <div class="USR_Name_Date_DIV">
+        <label class="Name">lnheaven179</label>
+        <label class="Date">9 April 2016</label>
+      </div>
+      <div class="USR_Text_DIV">
+        <label class="labels">This show has fun characters and an interesting premise. The dialogue is clever, the
+          acting is great, and just two episodes in it looks like there will be layers to the plot and surprises about
+          people's agendas. I love a show with a strong but imperfect female lead and positive relationships among the
+          characters.</label>
+      </div>
+      <div class="USR_Footer_DIV">
+        <label class="labels">Report This</label>
+        <label class="Separator-Lbl"> | </label>
+        <label class="labels">Permalink</label>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="USR_Header_DIV">
+        <label class="labels">User Review:</label>
+        <label class="labels">6,0 <i class="fa fa-star fa_custom"></i></label>
+      </div>
+      <div class="USR_Title_DIV">
+        <label class="labels">Great 1st season before a nosedive off a cliff</label><br>
+      </div>
+      <div class="USR_Name_Date_DIV">
+        <label class="Name">blee_beta</label>
+        <label class="Date">22 August 2017</label>
+      </div>
+      <div class="USR_Text_DIV">
+        <label class="labels">The first season was really well done. Tight writing and a clear plot line that could have
+          carried the show for at least 5 seasons...and they completely abandoned the story to pursue a plot for season
+          two that appears to have come straight from the mind of a teenage girl - complete with nonsensical plot holes
+          and atrocious dialogue and directing. I had such high hopes for this series, and getting to see the Earp
+          family keep chipping away at the family curse.</label>
+      </div>
+      <div class="USR_Footer_DIV">
+        <label class="labels">Report This</label>
+        <label class="Separator-Lbl"> | </label>
+        <label class="labels">Permalink</label>
+      </div>
+    </div>
+  </div>
+
+  <a href=""> <label id="SeeMoreRvsLbl">See more reviews »</label></a>
+
+  <div class="wrapper">
+    <section class="main-container">
+      <h2>More Like This</h2>
+      <div class="box">
+        <a href=""><img src="TvShows/HawaIIFive-o.png" alt=""></a>
+        <a href=""><img src="TvShows/LukeCage.png" alt=""></a>
+        <a href=""><img src="TvShows/TheFlash.png" alt=""></a>
+        <a href=""><img src="TvShows/BlackLightning.png" alt=""></a>
+        <a href=""><img src="TvShows/NewGirl.png" alt=""></a>
+        <a href=""><img src="TvShows/DCLegendsOfTomorrow.png" alt=""></a>
+      </div>
+
+      <hr class="General_hr">
+      <footer class="site-footer">
+        <div class="container">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Cinematic Book is the world's largest multimedia database and community. Connect
+              with millions of fans from over 200 countries worldwide in our active online community of over half a
+              million users a day!</p>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="">Movies</a></li>
+              <li><a href="">TV Shows</a></li>
+              <li><a href="">Animes</a></li>
+              <li><a href="">Community</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Contribute</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <br>
+        </div>
+        <br>
+        <p id="Copyright-Lbl">Copyright &copy; 2020 All Rights Reserved</p>
+      </footer>
+    </section>
+  </div>
+</body>
+</html>
+
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+</script>

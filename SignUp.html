@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+     <!-- Search btn & txtbox -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+
+    <title>Cinematic Book</title>
+  </head>
+
+  <body id="bodyBackgroundColor">
+    <div class="HeadPanel">
+      <div id="myNav" class="overlay"">
+        <a href=" javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Animes</a>
+            <a href="#">Community</a>
+          </div>
+      </div>
+
+      <span id="MenuBtn" onclick="openNav()">&#9776;</span>
+
+      <a href="index.html" id="ahref"><label id="Title">Cinematic Book</label></a>
+
+      <div class="input-group" id="input-group_search">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">TV Shows</a></li>
+              <li><a href="#">Animes</a></li>
+            </ul>
+        </div>  
+        <input type="text" class="form-control" id="Searchtxtbox" aria-label="..." placeholder="Search...">
+      </div>
+      <a href="SignIn.html" id="SignInBtn"><button type="button" class="buttons">Sign in</button></a>
+      <a href="SignUp.html" id="SignUpBtn"><button type="button" class="buttons">Sign up</button></a>
+    </div>
+
+    <div class="SignWrapper">
+        <div id="Sign-Main-Div">
+          <div id="Item-Container-Div">
+            <div class="heading">
+              <h2 class="Sign-Lbl_color">Sign up</h2>
+                <div class="input-group input-group-lg" id="Sign-Username-Email-Div">
+                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input type="text" class="form-control" placeholder="Email">
+                </div>
+
+                <div class="input-group input-group-lg" id="Sign-Username-Div">
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <input type="text" class="form-control" placeholder="Username">
+                </div>
+              
+                <div class="input-group input-group-lg" id="Sign-Password-Div">
+                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                  <input type="password" class="form-control" placeholder="Password">
+                </div>
+
+                <div class="input-group input-group-lg" id="Sign-Password-Div">
+                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                  <input type="password" class="form-control" placeholder="Repeat Password">
+                </div>
+                    
+                <div class="row" id="TermOfService-Div">
+                    <div class="checkbox pull-right">
+                      <label class="Sign-Lbl_color"><input type="checkbox">I have read and agree to the Term of Service & Privacy Policy</label>
+                    </div>
+                </div>
+                    
+                <button type="submit" class="btn btn btn-primary" id="Login-Regist-Btn">Create Account</button>
+               
+                <div class="Sign-or">
+                  <hr id="hr">
+                </div>
+                 
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <a href="#" class="btn btn-lg btn-primary btn-block">Facebook</a>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <a href="#" class="btn btn-lg btn-info btn-block">Google</a>
+                  </div>
+                </div>
+               
+                <a href="index.html">
+                  <button class="btn btn btn-primary" id="BackToMainPage-Btn">Back
+                    to Main Page </button>
+                </a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <hr class="General_hr">
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+            <p class="text-justify">Cinematic Book is the world's largest multimedia database and community. Connect with
+            millions of fans from over 200 countries worldwide in our active online community of over half a million users
+            a day!</p>
+        </div>
+        
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="">Movies</a></li>
+              <li><a href="">TV Shows</a></li>
+              <li><a href="">Animes</a></li>
+              <li><a href="">Community</a></li>
+            </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Contribute</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+        </div>
+      </div> 
+      <p id="Copyright-Lbl">Copyright &copy; 2020 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
+
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+</script>

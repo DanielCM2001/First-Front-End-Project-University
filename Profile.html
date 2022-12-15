@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Vai buscar Icons -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Search btn & txtbox -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+
+  <style>
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #0c0c0d;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+
+  <title>Cinematic Book</title>
+</head>
+
+<body id="bodyBackgroundColor">
+  <header>
+    <div class="HeadPanel">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Movies</a>
+          <a href="#">TV Shows</a>
+          <a href="#">Animes</a>
+          <a href="#">Community</a>
+        </div>
+      </div>
+
+      <span id="MenuBtn" onclick="openNav()">&#9776;</span>
+
+      <a href="MainPage.html" id="ahref"><label id="Title">Cinematic Book</label></a>
+
+      <div class="input-group" id="input-group_search">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">All <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Animes</a></li>
+          </ul>
+        </div>
+        <input type="text" class="form-control" id="Searchtxtbox" aria-label="..." placeholder="Search...">
+      </div>
+
+      <button class="dropbtn" id="bellbtn"><i class='fa fa-bell'></i></button>
+      <button class="dropbtn" id="Messagebtn"><i class='fa fa-envelope'></i></button>
+
+      <div class="dropdown" id="drop_index" style="z-index: 1">
+        <!--z-index: 1;-->
+        <button class="dropbtn">SilvRayleigh | <i class='fas fa-user-circle fa_ProfileCircle'></i></button>
+        <div class="dropdown-content">
+          <a href="Profile.html">Profile</a>
+          <a href="#">Friends</a>
+          <a href="#">Blog Posts</a>
+          <a href="#">Reviews</a>
+          <a href="#">Account Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="ProfileBannerBackground">
+    <div class="ProfileBannerShadow"></div>
+  </div>
+
+  <div class="MainInfoDiv">
+    <div class="MainHeaderInfo">
+      <div id="ProfileNameDiv">
+        <label id="ProfileNameLbl">SilvRayleigh's Profile</label>
+      </div>
+
+      <div id="EditProfileDiv">
+        <a href=""> <label id="EditProfileLbl"><i class="fa fa-cog"></i> Edit Profile</label><br></a>
+      </div>
+    </div>
+
+    <div class="MainLeftInfo">
+      <div id="MainLeftInfo_BtnsDiv">
+        <img id="profilepic" src="Profile/Pic/Pic.jpg">
+        <button class="buttons"><i class="fa fa-comments-o" id="Icons"></i> Comment</button>
+        <button class="buttons"><i class="fa fa-envelope" id="Icons"></i> Messages</button>
+        <button class="buttons"><i class="fa fa-user-plus" id="Icons"></i> Requests</button>
+
+        <button class="buttons"><i class="fas fa-list-alt" id="Icons"></i> Movies</button>
+        <button class="buttons"><i class="fas fa-list-alt" id="Icons"></i> TVShows</button>
+        <button class="buttons"><i class="fas fa-list-alt" id="Icons"></i> Animes</button>
+      </div>
+
+      <hr class="hr">
+      <label class="Quests">Last Online:</label>
+      <label class="Answ" id="LastOnlineAnswLbl">Now</label><br>
+      <label class="Quests">Joined:</label>
+      <label class="Answ">Apr 16, 2020</label>
+
+      <hr class="hr">
+      <label class="Quests">Forum Posts:</label>
+      <label class="Answ">0</label><br>
+      <label class="Quests">Reviews:</label>
+      <label class="Answ">0</label><br>
+      <label class="Quests">Recommendations:</label>
+      <label class="Answ">0</label><br>
+      <label class="Quests">Blog Posts:</label>
+      <label class="Answ">0</label><br>
+      <hr class="hr">
+
+      <div id="FriendsDiv">
+        <label id="FriendsLbl">Friends</label>
+        <label id="AllFriendsLbl">All (4)</label><br>
+
+        <div id="FriendsPicsDiv">
+          <img class="FriendsPics" src="Profile/FriendsPics/1.png">
+          <img class="FriendsPics" src="Profile/FriendsPics/2.jpg">
+          <img class="FriendsPics" src="Profile/FriendsPics/3.jpg">
+          <img class="FriendsPics" src="Profile/FriendsPics/4.jpg">
+        </div>
+      </div>
+    </div>
+
+    <div class="MainRightDiv">
+      <div class="BioDiv">
+        <label id="Text">No biography yet.</label>
+      </div>
+
+      <div class="StatisticsDiv">
+        <div class="CategoryTitleDiv">
+          <label class="Title">Statistics</label>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="CategoryDiv">
+            <label id="Title">Movies</label>
+          </div>
+          <div class="StatisticsDiv_DaysDiv">
+            <label class="Labels">Days:</label>
+            <label class="Labels">0,0</label>
+          </div>
+          <div class="StatisticsDiv_AvgRateDiv">
+            <label class="Labels">Average Rate:</label>
+            <label class="Labels">0,0</label>
+          </div>
+          <div class="StatisticsDiv_GraphDiv"></div> <br>
+          <div class="StatisticsDiv_StatsDiv">
+            <label class="Labels"><i class="fa fa-circle fa_Watching"></i> Watching: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_Completed"></i> Completed: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_OnHold"></i> On-Hold: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_Dropped"></i> Dropped: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_PlanToWatch"></i> Plan to Watch: 0</label><br>
+          </div>
+          <div class="StatisticsDiv_StatsDataDiv">
+            <label class="Labels">Total Entries: 0</label><br>
+            <label class="Labels">Rewatched: 0</label><br>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="CategoryDiv">
+            <label id="Title">TV Shows</label>
+          </div>
+          <div class="StatisticsDiv_DaysDiv">
+            <label class="Labels">Days:</label>
+            <label class="Labels">0,0</label>
+          </div>
+          <div class="StatisticsDiv_AvgRateDiv">
+            <label class="Labels">Average Rate:</label>
+            <label class="Labels">0,0</label>
+          </div>
+          <div class="StatisticsDiv_GraphDiv"></div> <br>
+          <div class="StatisticsDiv_StatsDiv">
+            <label class="Labels"><i class="fa fa-circle fa_Watching"></i> Watching: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_Completed"></i> Completed: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_OnHold"></i> On-Hold: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_Dropped"></i> Dropped: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_PlanToWatch"></i> Plan to Watch: 0</label><br>
+          </div>
+          <div class="StatisticsDiv_StatsDataDiv">
+            <label class="Labels">Total Entries: 0</label><br>
+            <label class="Labels">Rewatched: 0</label><br>
+            <label class="Labels">Episodes: 0</label>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="CategoryDiv">
+            <label id="Title">Animes</label>
+          </div>
+          <div class="StatisticsDiv_DaysDiv">
+            <label class="Labels">Days:</label>
+            <label class="Labels">0,0</label>
+          </div>
+          <div class="StatisticsDiv_AvgRateDiv">
+            <label class="Labels">Average Rate:</label>
+            <label class="Labels">0,0</label>
+          </div>
+          <div class="StatisticsDiv_GraphDiv"></div> <br>
+          <div class="StatisticsDiv_StatsDiv">
+            <label class="Labels"><i class="fa fa-circle fa_Watching"></i> Watching: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_Completed"></i> Completed: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_OnHold"></i> On-Hold: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_Dropped"></i> Dropped: 0</label><br>
+            <label class="Labels"><i class="fa fa-circle fa_PlanToWatch"></i> Plan to Watch: 0</label><br>
+          </div>
+          <div class="StatisticsDiv_StatsDataDiv">
+            <label class="Labels">Total Entries: 0</label><br>
+            <label class="Labels">Rewatched: 0</label><br>
+            <label class="Labels">Episodes: 0</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="FavDiv">
+        <div class="CategoryTitleDiv">
+          <label class="Title">Favorites</label>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="CategoryDiv">
+            <label id="Title">People</label>
+          </div>
+          <div class="FavPicsDiv">
+            <img class="FavPics" src="Profile/FavPeople/1.jpg">
+            <img class="FavPics" src="Profile/FavPeople/2.jpg">
+            <img class="FavPics" src="Profile/FavPeople/3.jpg">
+            <img class="FavPics" src="Profile/FavPeople/4.jpg">
+            <img class="FavPics" src="Profile/FavPeople/5.jpg">
+            <img class="FavPics" src="Profile/FavPeople/6.jpg">
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="CategoryDiv">
+            <label id="Title">Characters</label>
+          </div>
+          <div class="FavPicsDiv">
+            <img class="FavPics" src="Profile/FavCharacters/1.jpg">
+            <img class="FavPics" src="Profile/FavCharacters/2.jpg">
+            <img class="FavPics" src="Profile/FavCharacters/3.jpg">
+            <img class="FavPics" src="Profile/FavCharacters/4.jpg">
+          </div>
+        </div>
+      </div>
+
+      <hr class="General_hr" style="transform: translateX(-10%);">
+      <footer class="site-footer" style="transform: translateX(-10%);">
+        <div class="container">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Cinematic Book is the world's largest multimedia database and community. Connect
+              with millions of fans from over 200 countries world\wide in our active online community of over half a
+              million users a day!</p>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="">Movies</a></li>
+              <li><a href="">TV Shows</a></li>
+              <li><a href="">Animes</a></li>
+              <li><a href="">Community</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Contribute</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <br>
+        </div>
+        <br>
+        <p id="Copyright-Lbl">Copyright &copy; 2020 All Rights Reserved</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+    document.getElementById("drop_index").style.zIndex = "0";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("drop_index").style.zIndex = "1";
+  }
+</script>

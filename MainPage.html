@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+  <head head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Search btn & txtbox -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   
+    <style>
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #0c0c0d;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+    <title>Cinematic Book</title>
+  </head>
+
+  <body id="bodyBackgroundColor">
+    <header>
+      <div class="HeadPanel">
+        <div id="myNav" class="overlay"">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">Movies</a>
+              <a href="#">TV Shows</a>
+              <a href="#">Animes</a>
+              <a href="#">Community</a>
+            </div>
+        </div>
+        
+        <span id="MenuBtn" onclick="openNav()">&#9776;</span>
+
+        <a href="MainPage.html" id="ahref"><label id="Title">Cinematic Book</label></a>
+
+        <div class="input-group" id="input-group_search">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">TV Shows</a></li>
+              <li><a href="#">Animes</a></li>
+            </ul>
+          </div>
+          <input type="text" class="form-control" id="Searchtxtbox" aria-label="..." placeholder="Search...">
+        </div>
+          
+          <button class="dropbtn" id="bellbtn"><i class='fa fa-bell'></i></button>
+          <button class="dropbtn" id="Messagebtn"><i class='fa fa-envelope'></i></button>
+          
+          <div class="dropdown">
+            <button class="dropbtn">SilvRayleigh | <i class='fas fa-user-circle fa_ProfileCircle'></i></button>
+            <div class="dropdown-content">
+              <a href="Profile.html">Profile</a>
+              <a href="#">Friends</a>
+              <a href="#">Blog Posts</a>
+              <a href="#">Reviews</a>
+              <a href="#">Account Settings</a>
+              <a href="index.html">Logout</a>
+            </div>
+          </div>   
+      </div>
+    </header>
+
+    <div class="w3-content w3-display-container">
+      <div class="w3-display-container mySlides">
+        <img src="images/DisneyGallery.jpg" class="SlidePics">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Disney Gallery: Star Wars: The Mandalorian
+          </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="images/WhiteLines.png" class="SlidePics">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            White Lines: The New Netflix Show
+          </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="images/Hollywood.jpg" class="SlidePics">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Hollywood: Ryan Murphy's New Drama Is Coming...
+          </div>
+      </div>
+
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <div><!-- Automatic slide -->
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <div class="wrapper">
+      <section class="main-container">
+        <h2>Popular right now</h2>
+          <div class="box">
+            <a href="WynonnaEarp.html"><img src="PopularRightNow/WynonnaEarp.png" alt=""></a>
+            <a href=""><img src="PopularRightNow/TheRoadTrick.png"></a>
+            <a href=""><img src="PopularRightNow/ClubdeCuervos.png" alt=""></a>
+            <a href=""><img src="PopularRightNow/GreysAnatomy.png" alt=""></a>
+            <a href=""><img src="PopularRightNow/StepUpTheStreets2.png" alt=""></a>
+            <a href=""><img src="PopularRightNow/LiquidScience.png" alt=""></a>
+
+            <a href=""><img src="PopularRightNow/13ReasonsWhy.png" alt=""></a>
+            <a href=""><img src="PopularRightNow/TheStaircase.png" alt=""></a>
+            <a href=""><img src="PopularRightNow/TheVietnamWar.png" alt=""></a>
+            <a href=""><img src="PopularRightNow/TheCovenan.png" alt=""></a>
+            <a href=""><img src="PopularRightNow/Marcella.png" alt=""></a>
+            <a href=""><img src="PopularRightNow/Riverdale.png" alt=""></a>
+          </div>
+
+        <h2>TV Shows</h2>
+          <div class="box">
+            <a href=""><img src="TvShows/HawaIIFive-o.png" alt=""></a>
+            <a href=""><img src="TvShows/LukeCage.png" alt=""></a>
+            <a href=""><img src="TvShows/TheFlash.png" alt=""></a>
+            <a href=""><img src="TvShows/BlackLightning.png" alt=""></a>
+            <a href=""><img src="TvShows/NewGirl.png" alt=""></a>
+            <a href=""><img src="TvShows/DCLegendsOfTomorrow.png" alt=""></a>
+          </div>
+
+        <h2>Animes</h2>
+          <div class="box">
+            <a href=""><img src="Animes/FullMetalAlc.png" alt=""></a>
+            <a href=""><img src="Animes/SteinsGate.jpg" alt=""></a>
+            <a href=""><img src="Animes/OnePiece.jpg" alt=""></a>
+            <a href=""><img src="Animes/DeathNote.jpg" alt=""></a>
+            <a href=""><img src="Animes/OnePunch.jpg" alt=""></a>
+            <a href=""><img src="Animes/DragonBallSuper.jpg" alt=""></a>                
+          </div>
+      
+          <hr class="General_hr">
+      
+      <h2 id="CreateYourListLbl">CREATE YOUR LIST</h2>   
+      
+      <div class="CreateYourList">
+          <div class="container">
+            <div class="col-sm-12 col-md-6">
+              <img src="MainPage/PersonalizedList.png" class="YourListPics">
+              <h3>What have you watched?</h3>
+              <p>Create your personalized list from tens of thousands of titles on the world’s largest multimedia database.</p>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+              <img src="MainPage/StayUpToDate.png" class="YourListPics">
+              <h3>Need to stay up to date?</h3>
+              <p>Use your list to organize and track what titles you’ve completed, your current progress, what you plan to watch and so much more.</p>
+            </div>
+        </div>    
+      </div>
+
+      <hr class="General_hr">
+      <footer class="site-footer">
+        <div class="container">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Cinematic Book is the world's largest multimedia database and community. Connect with millions of fans from over 200 countries worldwide in our active online community of over half a million users a day!</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="">Movies</a></li>
+                <li><a href="">TV Shows</a></li>
+                <li><a href="">Animes</a></li>
+                <li><a href="">Community</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Contribute</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+          <br>
+        </div>
+        <br>
+        <p id="Copyright-Lbl">Copyright &copy; 2020 All Rights Reserved</p>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
+
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+</script>
+
+<script>
+  var slideIndex = 0;
+  showDivs(slideIndex);
+  showSlides();
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = x.length
+    }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+  }
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 6000); // Change image every 2 seconds
+  }
+</script>
+
